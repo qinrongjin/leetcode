@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class TestMain {
 
 	public static void main(String[] args) {
-		String as = "dsd";
+		String as = "dswd";
 		t(23);
 	}
 
