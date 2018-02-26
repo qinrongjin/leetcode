@@ -2,10 +2,10 @@ package cn.tiny77.algorithm;
 
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
-public class A12 {
+public class A014 {
 
     public static void main(String[] arg){
-        System.out.println(new A12().longestCommonPrefix(new String[]{
+        System.out.println(new A014().longestCommonPrefix(new String[]{
                 "ccc","ccc"
         }));
 
