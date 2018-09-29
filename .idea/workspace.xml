@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="140c27b1-0bda-4953-9429-f5ee90a27ffb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A020.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A021.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/algorithm/target/" />
@@ -28,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="A020.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="A020.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A020.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -36,6 +36,16 @@
               <folding>
                 <element signature="e#157#168#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="A021.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A021.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="31" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,6 +90,7 @@
         <option value="$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/ListNode.java" />
         <option value="$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A019.java" />
         <option value="$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A020.java" />
+        <option value="$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A021.java" />
       </list>
     </option>
   </component>
@@ -402,12 +413,12 @@
       <workItem from="1520495490441" duration="38000" />
       <workItem from="1521032524085" duration="3880000" />
       <workItem from="1521099613015" duration="2609000" />
-      <workItem from="1538190133180" duration="4467000" />
+      <workItem from="1538190133180" duration="5219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30844000" />
+    <option name="totallyTimeSpent" value="31596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -489,14 +500,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A014.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A015.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -978,6 +981,14 @@
           <folding>
             <element signature="e#157#168#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/src/main/java/cn/tiny77/algorithm/A021.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="31" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
