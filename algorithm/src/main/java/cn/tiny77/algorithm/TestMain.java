@@ -1,17 +1,45 @@
 package cn.tiny77.algorithm;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class TestMain {
+import java.util.logging.Logger;
 
-	public static void main(String[] args) {
-		String as = "dswd";
-		t(23);
+public class TestMain<T> {
+
+	static GirlFriend me = new GirlFriend(true, true, true);
+
+	static Logger logger = null;
+
+	public static void main(String[] args) throws Throwable {
+		logger.info("七夕 start");
+		GirlFriend myGirlFriend = new GirlFriend(true,
+				true, true);
+		me.sendGiftTo(myGirlFriend, "flower");
+		me.datingWith(myGirlFriend);
+		while (!isQixiEnd()) {
+			Thread.sleep(1000);
+		}
+		me.endDating();
+		myGirlFriend.destroy();
+		logger.info("七夕 end");
+
 	}
 
-	
-	static <U> void t(U u) {
-		System.out.println(u);
+	private static boolean isQixiEnd() {
+		return false;
+	}
+
+	static class GirlFriend {
+
+		public GirlFriend(boolean white, boolean rich, boolean beautiful) {
+
+		}
+
+		public void destroy() {}
+
+		public void endDating() {}
+
+		public void datingWith(GirlFriend target) {}
+
+		public void sendGiftTo(GirlFriend target, String gift) {}
 	}
 }
