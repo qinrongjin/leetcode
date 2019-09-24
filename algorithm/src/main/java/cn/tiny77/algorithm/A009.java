@@ -6,29 +6,25 @@ public class A009 {
 
 	}
 
-	public boolean isPalindrome(int x) {
-		if (x < 0) return false; 
-		if (x == reverse(x)) return true;
-		else return false;
-	}
-	
-	public int reverse(int x) {
-		if(x == Integer.MIN_VALUE) return 0;
-		boolean flag = x < 0;
-		x = flag ? -x : x;
-		int m = (int) Math.pow(10, (int) Math.log10(x));
-		long sum = 0;
-		long k = 1;
-		while(m > 0) {
-			sum += x/m * k;
-			if(sum > Integer.MAX_VALUE) {
-				return 0;
+	/**
+	 * 字符串方法
+	 */
+	class Solution {
+		public boolean isPalindrome(int x) {
+			char[] arr = String.valueOf(x).toCharArray();
+			int i = 0;
+			while (true) {
+				if (i >= arr.length / 2) {
+					break;
+				}
+				if (arr[i] != arr[arr.length - i - 1]) {
+					return false;
+				}
+				i ++;
 			}
-			x %= m;
-			m /= 10;
-			k *= 10;
+			return true;
 		}
-		return (int) (flag ? -sum : sum);
 	}
+
 
 }
