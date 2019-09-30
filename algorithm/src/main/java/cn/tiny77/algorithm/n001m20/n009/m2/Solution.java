@@ -1,12 +1,6 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n009.m2;
 
-public class A009_2 {
-
-    public static void main(String[] args) {
-
-    }
-
-    /**
+/**
      * 非字符串方法
      */
     class Solution {
@@ -23,5 +17,3 @@ public class A009_2 {
             return sum;
         }
     }
-
-}

@@ -1,13 +1,6 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n005;
 
-public class A005 {
-
-    public static void main(String[] args) {
-        String res = new A005().new Solution().longestPalindrome("abacab");
-        System.out.println(res);
-    }
-
-    class Solution {
+class Solution {
         public String longestPalindrome(String s) {
             StringBuilder stringBuilder = new StringBuilder("#");
             for (char c :s.toCharArray()){
@@ -41,4 +34,3 @@ public class A005 {
             return stringBuilder.substring(pos - max + 1, pos + max).replace("#", "");
         }
     }
-}

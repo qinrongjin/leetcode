@@ -1,15 +1,9 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n003;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class A003 {
-
-    public static void main(String[] args) {
-        System.out.println(new A003().new Solution().lengthOfLongestSubstring("abba"));
-    }
-
-    class Solution {
+class Solution {
 
         public int lengthOfLongestSubstring(String s) {
             Map<Character, Integer> map = new HashMap<>();
@@ -31,4 +25,3 @@ public class A003 {
         }
 
     }
-}

@@ -1,14 +1,8 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n001;
 
 import java.util.HashMap;
 
-public class A001 {
-
-    public static void main(String[] args) {
-
-    }
-
-    class Solution {
+class Solution {
         public int[] twoSum(int[] nums, int target) {
             HashMap<Integer, Integer> map = new HashMap<>();
             for (int i = 0; i < nums.length; i ++) {
@@ -25,5 +19,3 @@ public class A001 {
             throw new RuntimeException();
         }
     }
-
-}

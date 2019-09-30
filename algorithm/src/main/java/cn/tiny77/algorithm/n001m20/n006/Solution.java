@@ -1,13 +1,6 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n006;
 
-public class A006 {
-
-    public static void main(String[] args) {
-        String res = new A006().new Solution().convert("0", 1);
-        System.out.println(res);
-    }
-
-    class Solution {
+class Solution {
         public String convert(String s, int numRows) {
             if (numRows == 1) {
                 return s;
@@ -45,4 +38,3 @@ public class A006 {
             return t * 2;
         }
     }
-}

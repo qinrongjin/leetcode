@@ -1,12 +1,6 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n008;
 
-public class A008 {
-
-	public static void main(String[] args) {
-		System.out.println(new A008().new Solution().myAtoi("-6147483648"));
-	}
-
-	class Solution {
+class Solution {
 		public int myAtoi(String str) {
 			if (str == null || str.length() == 0) return 0;
 			char[] chars = str.toCharArray();
@@ -49,5 +43,3 @@ public class A008 {
 			return  sum;
 		}
 	}
-
-}

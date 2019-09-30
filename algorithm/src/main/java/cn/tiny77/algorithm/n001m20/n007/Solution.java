@@ -1,18 +1,6 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n007;
 
-/**
- * Reverse Integer
- * @author mrqin
- *
- */
-public class A007 {
-
-	public static void main(String[] args) {
-		System.out.println(Integer.MAX_VALUE);
-		System.out.println(- Integer.MIN_VALUE);
-	}
-
-	class Solution {
+class Solution {
 		public int reverse(int x) {
 			if(x == Integer.MIN_VALUE) return 0;
 			boolean flag = x < 0;
@@ -32,4 +20,3 @@ public class A007 {
 			return (int) (flag ? -sum : sum);
 		}
 	}
-}

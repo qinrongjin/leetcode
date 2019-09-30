@@ -1,12 +1,6 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n009;
 
-public class A009 {
-
-	public static void main(String[] args) {
-
-	}
-
-	/**
+/**
 	 * 字符串方法
 	 */
 	class Solution {
@@ -25,6 +19,3 @@ public class A009 {
 			return true;
 		}
 	}
-
-
-}

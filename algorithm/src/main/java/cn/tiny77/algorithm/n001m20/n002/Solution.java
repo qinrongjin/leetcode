@@ -1,8 +1,7 @@
-package cn.tiny77.algorithm;
+package cn.tiny77.algorithm.n001m20.n002;
 
-public class A002 {
+class Solution {
 
-    class Solution {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             if (l1 == null && l2 == null) {
                 return null;
@@ -29,5 +28,3 @@ public class A002 {
         }
 
     }
-
-}
