@@ -1,35 +1,32 @@
 package cn.tiny77.algorithm.h01.t40.n022;
 
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 class Solution {
-    public List<String> generateParenthesis(int n) {
-        if(n == 1) {
-            return Arrays.asList("()");
-        }
-        else {
-            List<String> string = generateParenthesis(n - 1);
-            Set<String> set = new HashSet<String>();
-            for (String s : string) {
-                for(int i = 0; i <= s.length(); i++) {
-                    set.add(insert(s, i));
-                }
-            }
-            return set.stream().collect(Collectors.<String>toList());
-        }
+
+    public static void main(String[] args) {
+        System.out.println(new Solution().generateParenthesis(3));
     }
 
-    private String insert(String s, int i) {
-        if(i==0) {
-            return "()" + s;
-        } else if (i == s.length()) {
-            return s + "()";
+    public List<String> generateParenthesis(int n) {
+        int l = 0;
+        int r = 0;
+        List<String> result = new ArrayList<>();
+        setNext(result, "", n * 2, l , r);
+        return result;
+    }
+
+    private void setNext(List<String> result, String oriStr, int n, int l, int r) {
+        if (n == oriStr.length()) {
+            if (l == r) {
+                result.add(oriStr);
+            }
         } else {
-            return s.substring(0, i) + "()" + s.substring(i);
+            if (l > r) {
+                setNext(result, oriStr + ")", n, l, r + 1);
+            }
+            setNext(result, oriStr + "(", n, l + 1, r);
         }
     }
 }
