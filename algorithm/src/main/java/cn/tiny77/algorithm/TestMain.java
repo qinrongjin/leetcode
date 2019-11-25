@@ -10,18 +10,7 @@ public class TestMain<T> {
 	static Logger logger = null;
 
 	public static void main(String[] args) throws Throwable {
-		logger.info("七夕 start");
-		GirlFriend myGirlFriend = new GirlFriend(true,
-				true, true);
-		me.sendGiftTo(myGirlFriend, "flower");
-		me.datingWith(myGirlFriend);
-		while (!isQixiEnd()) {
-			Thread.sleep(1000);
-		}
-		me.endDating();
-		myGirlFriend.destroy();
-		logger.info("七夕 end");
-
+		System.out.println("9131010875056506XX".substring(2, 8));
 	}
 
 	private static boolean isQixiEnd() {
