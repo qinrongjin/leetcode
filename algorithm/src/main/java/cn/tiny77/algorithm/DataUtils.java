@@ -9,7 +9,7 @@ public class DataUtils {
         int[] result = new int[strings.length];
         int i = 0;
         for (String string : strings) {
-            result[i ++ ] = Integer.parseInt(string);
+            result[i ++ ] = Integer.parseInt(string.trim());
         }
         return result;
     }
