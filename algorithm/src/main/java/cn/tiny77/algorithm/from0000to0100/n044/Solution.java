@@ -15,11 +15,15 @@ class Solution {
             if (pc != '*') {
                 flag = false;
             }
-            for(int i = 1; i <= s.length() ; i ++) {
-                char sc = s.charAt(i - 1);
+            for(int i = 0; i <= s.length() ; i ++) {
                 if (flag) {
                     match[i][j] = true;
                 } else {
+                    if (i == 0) {
+                        match[i][j] = false;
+                        continue;
+                    }
+                    char sc = s.charAt(i - 1);
                     if (pc == '*') {
                         match[i][j] = match[i - 1][j] || match[i][j - 1];
                     } else {
@@ -30,7 +34,7 @@ class Solution {
                 }
             }
         }
-        displayMatch(match);
+        //displayMatch(match);
         return match[s.length()][p.length()];
     }
 
